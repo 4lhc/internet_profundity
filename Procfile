@@ -1,1 +1,1 @@
-web: python profound.py
+web: gunicorn wsgi:app
