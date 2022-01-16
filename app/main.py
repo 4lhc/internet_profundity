@@ -144,7 +144,7 @@ def cache_view():
     if sentences is None:
         sentences = fill_cache()
     response = "\n".join(sentences)
-    return f"<em>{response}</em>"
+    return f"{response}"
 
 
 @app.route("/")
@@ -153,5 +153,5 @@ def home_view():
     if sentences is None:
         sentences = fill_cache()
     response = random.choice(sentences)
-    return f"<em>{response}</em>"
+    return f"{response}"
 
